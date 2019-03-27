@@ -12,7 +12,6 @@ app.use(express.static(__dirname + '/../public'));
 app.use(bodyParser.json());
 
 // Mongoose setup
-
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/book_db')
 
